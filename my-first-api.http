@@ -1,0 +1,15 @@
+### GET request to example server
+GET http://localhost:8081/todo
+
+### POST request to add todo
+POST http://localhost:8081/todo
+
+{
+    "item": "get groceries"
+}
+
+### DELETE todo based on id
+DELETE http://localhost:8081/todo/1
+
+### DELETE todo based on non existed id
+DELETE http://localhost:8081/todo/3
