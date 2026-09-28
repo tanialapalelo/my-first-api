@@ -9,7 +9,7 @@ POST http://localhost:8081/todo
 }
 
 ### DELETE todo based on id
-DELETE http://localhost:8081/todo/1
+### DELETE http://localhost:8081/todo/1
 
 ### DELETE todo based on non existed id
-DELETE http://localhost:8081/todo/3
+### DELETE http://localhost:8081/todo/3
