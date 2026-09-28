@@ -8,6 +8,9 @@ POST http://localhost:8081/todo
     "item": "get groceries"
 }
 
+### GET request to search todo
+GET http://localhost:8081/search?q=Shop
+
 ### DELETE todo based on id
 ### DELETE http://localhost:8081/todo/1
 
