@@ -36,7 +36,7 @@ func NewServer(todoSvc *todo.Service) *Server {
 			return
 		}
 		results := todoSvc.Search(query)
-		b, err := Json.Marshal(results)
+		b, err := json.Marshal(results)
 
 		if err != nil {
 			writer.WriteHeader(http.StatusInternalServerError)

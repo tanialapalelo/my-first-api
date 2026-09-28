@@ -2,6 +2,7 @@ package todo
 
 import (
 	"errors"
+	"strings"
 )
 
 type Item struct {
@@ -44,7 +45,7 @@ func (svc *Service) Search(query string) []string {
 	var results []string
 	for _, todo := range svc.todos {
 		if strings.Contains(strings.ToLower(todo.Task), strings.ToLower(query)) {
-			results.append(results, todo.Task)
+			results = append(results, todo.Task)
 		}
 	}
 	return results
